@@ -21,6 +21,8 @@ img {
   margin: 0 auto;
   padding: 0 20px;
   max-width: 980px;
+  display: grid;
+  grid-template-columns: 70% 30%;
 }
 
 nav {
@@ -44,18 +46,20 @@ nav a {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
 }
 
 .feature {
     width: 200px;
+    float:left;
+    margin-right: 20px;
 }
 
 @media (min-width:480px) {
   nav.nav-bar ul {
     display: flex;
-  }
-  nav.nav-bar ul li {
-    width: 100%;
-    text-align: center;
+    justify-content: space-between;
   }
 }
